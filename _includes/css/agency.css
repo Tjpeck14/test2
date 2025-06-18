@@ -177,6 +177,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 /* --- UPDATED STYLE FOR SITE TITLE/HEADER --- */
+/* Two-line brand style for navbar */
 .navbar-default .navbar-brand {
     font-family: {{ site.data.template.font.primary }};
     color: #fff !important;
@@ -185,6 +186,39 @@ fieldset[disabled] .btn-xl.active {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-style: normal !important;
+    line-height: 1.1;
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 15px;
+}
+
+.navbar-default .navbar-brand .brand-main {
+    font-size: 1.2em;
+    line-height: 1.15;
+}
+
+.navbar-default .navbar-brand .brand-sub {
+    font-size: 0.75em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    opacity: 0.85;
+    line-height: 1.1;
+    margin-top: 1px;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-brand {
+        font-size: 1em;
+        padding: 6px 10px;
+    }
+    .navbar-default .navbar-brand .brand-main {
+        font-size: 1em;
+    }
+    .navbar-default .navbar-brand .brand-sub {
+        font-size: 0.72em;
+    }
 }
 
 /* Keep navbar-brand white on hover/focus/active */
@@ -257,9 +291,13 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default .navbar-brand {
         font-size: 1.2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
+        padding: 10px 24px;
+    }
+    .navbar-default .navbar-brand .brand-main {
+        font-size: 1.2em;
+    }
+    .navbar-default .navbar-brand .brand-sub {
+        font-size: 0.85em;
     }
 
     .navbar-default .navbar-nav>.active>a {
@@ -273,6 +311,13 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1em;
+        padding: 4px 15px;
+    }
+    .navbar-default.navbar-shrink .navbar-brand .brand-main {
+        font-size: 1em;
+    }
+    .navbar-default.navbar-shrink .navbar-brand .brand-sub {
+        font-size: 0.7em;
     }
 }
 
@@ -294,21 +339,35 @@ header .intro-text {
     padding-bottom: 50px;
 }
 
+/* Two-line main header styling */
+header .intro-text .intro-heading {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+header .intro-text .intro-subheading {
+    display: block;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    opacity: 0.95;
+    margin-top: 0px;
+}
+
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: {{ site.data.template.font.secondary }};
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
-}
-
-header .intro-text .intro-heading {
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 50px;
 }
 
 @media(min-width:768px) {
@@ -326,12 +385,14 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        text-transform: uppercase;
-        font-family: {{ site.data.template.font.primary }};
+        margin-bottom: 10px;
         font-size: 75px;
         font-weight: 700;
-        line-height: 75px;
+        line-height: 1.1;
+    }
+    header .intro-text .intro-subheading {
+        font-size: 38px;
+        margin-bottom: 50px;
     }
 }
 
