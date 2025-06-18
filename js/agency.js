@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Agnecy Bootstrap Theme (http://startbootstrap.com)
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
@@ -10,7 +10,9 @@ $(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 1500, 'easeInOutExpo', function() {
+            updateBrandVisibility(); // <-- call after scroll completes
+        });
         event.preventDefault();
     });
 });
@@ -35,3 +37,20 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+// === BEGIN: Navbar brand visibility fix ===
+function updateBrandVisibility() {
+    var $navbar = $('#mainNav');
+    var $brand = $navbar.find('.navbar-brand');
+    if ($(window).scrollTop() < 100) {
+        $brand.addClass('hide-at-top');
+    } else {
+        $brand.removeClass('hide-at-top');
+    }
+}
+
+$(window).on('scroll', updateBrandVisibility);
+$(document).ready(function() {
+    updateBrandVisibility();
+});
+// === END: Navbar brand visibility fix ===
