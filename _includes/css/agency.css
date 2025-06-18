@@ -291,13 +291,17 @@ header .intro-text .intro-lead-in {
     line-height: 22px;
 }
 
+/* NEW: Main Page Heading - white, clean, bold, professional font */
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: {{ site.data.template.font.primary }};
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 700 !important;
     line-height: 50px;
+    color: #fff !important;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 @media(min-width:768px) {
@@ -317,10 +321,13 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font-family: {{ site.data.template.font.primary }};
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
         font-size: 75px;
-        font-weight: 700;
+        font-weight: 700 !important;
         line-height: 75px;
+        color: #fff !important;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 }
 
