@@ -181,15 +181,10 @@ fieldset[disabled] .btn-xl.active {
     font-family: {{ site.data.template.font.primary }};
     color: #fff !important;
     font-weight: 700;
-    font-size: 1em; /* slightly smaller base for mobile */
+    font-size: 2.2em;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-style: normal !important;
-    white-space: nowrap; /* prevent line wrap */
-    max-width: 38vw;     /* keep on one line for most screen sizes */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-right: 12px; /* add space from right nav for aesthetics */
 }
 
 /* Keep navbar-brand white on hover/focus/active */
@@ -261,10 +256,10 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 1.45em;              /* top of the page: fits long titles */
-        max-width: 26vw;                /* keep it on one line, but flexible */
-        padding-left: 18px;             /* more left space for balance */
-        padding-right: 24px;            /* more right space from nav items */
+        font-size: 2.2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
     }
 
     .navbar-default .navbar-nav>.active>a {
@@ -277,10 +272,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.10em;              /* after scroll, even more compact */
-        max-width: 20vw;
-        padding-left: 8px;
-        padding-right: 12px;
+        font-size: 1.7em;
     }
 }
 
