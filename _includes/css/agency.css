@@ -203,6 +203,12 @@ fieldset[disabled] .btn-xl.active {
     pointer-events: auto;
 }
 
+/* Hide brand at top after smooth scroll-to-top (in case .navbar-shrink lingers) */
+.navbar-default .navbar-brand.hide-at-top {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
 .navbar-default .navbar-brand .brand-main {
     font-size: 1.2em;
     line-height: 1.15;
