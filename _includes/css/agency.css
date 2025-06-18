@@ -170,22 +170,33 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+/* UPDATED NAVBAR BRAND STYLES BELOW */
 .navbar-default {
     border-color: transparent;
     background-color: #222;
 }
 
+/* --- UPDATED STYLE FOR SITE TITLE/HEADER --- */
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #{{ site.data.template.color.primary }};
+    font-family: {{ site.data.template.font.primary }};
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: normal !important;
 }
 
+/* Keep navbar-brand white on hover/focus/active */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #{{ site.data.template.color.secondary }};
+    color: #fff !important;
+    opacity: 0.85;
 }
+
+/* --- END UPDATED NAVBAR BRAND --- */
 
 .navbar-default .navbar-collapse {
     border-color: rgba(255,255,255,.02);
@@ -245,7 +256,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 2.2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -261,7 +272,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 }
 
