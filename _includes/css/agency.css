@@ -192,6 +192,15 @@ fieldset[disabled] .btn-xl.active {
     flex-direction: column;
     align-items: flex-start;
     padding: 8px 15px;
+    opacity: 0; /* HIDE BY DEFAULT */
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+/* Show navbar brand only when navbar is shrunk */
+.navbar-shrink .navbar-brand {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .navbar-default .navbar-brand .brand-main {
