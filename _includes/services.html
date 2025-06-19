@@ -10,7 +10,7 @@
       <!-- Profile Image and Buttons -->
       <div class="col-md-4 text-center">
         <img 
-          src="img/about-me/About.jpg"
+          src="/img/aboutme/About.jpg"
           alt="Tanner Peck"
           style="
             width: 275px;
@@ -21,13 +21,18 @@
             display: block;
             margin: 0 auto 28px auto;"
         >
-        <div class="mt-4">
-          <a href="/files/Tanner%20Peck%20-%20Resume.pdf" class="btn btn-primary btn-lg mb-2" download style="width:90%;max-width:270px;font-weight:bold;">
-            <i class="fa fa-download"></i> Download Resume
+        <div class="mt-4" style="margin-top: 32px;">
+          <a href="/files/Tanner%20Peck%20-%20Resume.pdf" 
+             class="btn btn-primary btn-lg mb-3 resume-btn" 
+             download 
+             style="width:100%;max-width:320px;font-weight:bold;padding:20px 0;font-size:1.2rem;letter-spacing:1px;display:block;margin:0 auto 24px auto;">
+            <i class="fa fa-download" style="margin-right:10px;"></i> DOWNLOAD RESUME
           </a>
-          <br>
-          <a href="https://www.linkedin.com/in/tanner-josiah-peck/" class="btn btn-linkedin btn-lg" target="_blank" style="background: #0077b5; color: #fff; margin-top: 12px; width:90%;max-width:270px;">
-            <i class="fa fa-linkedin"></i> LinkedIn
+          <a href="https://www.linkedin.com/in/tanner-josiah-peck/" 
+             class="btn btn-linkedin btn-lg" 
+             target="_blank" 
+             style="background: #0077b5; color: #fff; width:100%;max-width:320px;font-weight:bold;font-size:1.1rem;text-align:center;padding:12px 0;display:block;margin:0 auto;">
+            <i class="fa fa-linkedin" style="margin-right:8px;"></i>LinkedIn
           </a>
         </div>
       </div>
@@ -54,8 +59,6 @@
 /* LinkedIn button custom style */
 .btn-linkedin {
   display: inline-block;
-  padding: 10px 24px;
-  font-size: 1.1rem;
   border-radius: 5px;
   text-decoration: none;
   transition: background 0.2s;
@@ -63,8 +66,8 @@
   text-align: center;
 }
 .btn-linkedin:hover {
-  background: #005983;
-  color: #fff;
+  background: #005983 !important;
+  color: #fff !important;
   text-decoration: none;
 }
 @media (max-width: 991px) {
