@@ -3,49 +3,49 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">ABOUT ME</h2>
+        <h2 class="section-heading" style="font-size: 3rem; margin-bottom: 30px;">ABOUT ME</h2>
       </div>
     </div>
-    <div class="row d-flex align-items-center" style="margin-top: 40px; display: flex; align-items: center;">
+    <div class="row d-flex align-items-center" style="margin-top: 10px; display: flex; align-items: center;">
       <!-- Profile Image and Buttons -->
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 text-center" style="display: flex; flex-direction: column; align-items: center;">
         <img 
           src="img/about-me/About.jpg"
           alt="Tanner Peck"
           style="
-            width: 275px;
-            height: 275px;
+            width: 340px;
+            height: 340px;
             object-fit: cover;
             border-radius: 50%;
-            border: 6px solid #17375e;
+            border: 7px solid #17375e;
             display: block;
-            margin: 0 auto 28px auto;"
+            margin: 0 auto 32px auto;"
         >
-        <div class="mt-4" style="margin-top: 32px;">
+        <div class="mt-4" style="margin-top: 36px; width: 100%;">
           <a href="/files/Tanner%20Peck%20-%20Resume.pdf" 
              class="btn btn-primary btn-lg mb-3 resume-btn" 
              download 
-             style="width:100%;max-width:320px;font-weight:bold;padding:20px 0;font-size:1.2rem;letter-spacing:1px;display:block;margin:0 auto 24px auto;">
+             style="width:100%;max-width:340px;font-weight:bold;padding:22px 0;font-size:1.22rem;letter-spacing:1px;display:block;margin:0 auto 26px auto;">
             <i class="fa fa-download" style="margin-right:10px;"></i> DOWNLOAD RESUME
           </a>
           <a href="https://www.linkedin.com/in/tanner-josiah-peck/" 
              class="btn btn-linkedin btn-lg" 
              target="_blank" 
-             style="background: #0077b5; color: #fff; width:100%;max-width:320px;font-weight:bold;font-size:1.1rem;text-align:center;padding:12px 0;display:block;margin:0 auto;">
-            <i class="fa fa-linkedin" style="margin-right:8px;"></i>LinkedIn
+             style="background: #555; color: #fff; width:100%;max-width:340px;font-weight:bold;font-size:1.1rem;text-align:center;padding:14px 0;display:block;margin:0 auto;">
+            <i class="fa fa-linkedin" style="margin-right:8px; color: #fff;"></i>LinkedIn
           </a>
         </div>
       </div>
       <!-- About Me Text -->
-      <div class="col-md-8 d-flex align-items-center" style="height: 100%;">
-        <div style="margin-left: 24px; width:100%;">
+      <div class="col-md-8 d-flex align-items-center justify-content-center" style="height: 100%;">
+        <div style="margin-left: 32px; width:100%; max-width: 700px;">
           <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
-            <h4 style="color: #17375e; font-weight: bold; margin-bottom: 10px;">BACKGROUND</h4>
-            <p style="font-size: 1.2rem; margin-bottom: 30px;">
+            <h4 style="color: #17375e; font-weight: bold; margin-bottom: 18px; font-size: 2rem; letter-spacing: 1px;">BACKGROUND</h4>
+            <p style="font-size: 1.32rem; margin-bottom: 38px;">
               B.S in Mechanical Engineering, Syracuse University
             </p>
-            <h4 style="color: #17375e; font-weight: bold; margin-bottom: 10px;">SKILLS</h4>
-            <p style="font-size: 1.2rem;">
+            <h4 style="color: #17375e; font-weight: bold; margin-bottom: 18px; font-size: 2rem; letter-spacing: 1px;">SKILLS</h4>
+            <p style="font-size: 1.32rem;">
               Solidworks, Autodesk Inventor, Onshape, MATLAB, RStudio, NI Multisim, Arduino, Microsoft (Word, Powerpoint, Excel), 3D Printing, Mechanical Assembly, Machine Lab Trained.
             </p>
           </div>
@@ -64,9 +64,15 @@
   transition: background 0.2s;
   font-weight: bold;
   text-align: center;
+  background: #555 !important;     /* Grey background */
+  color: #fff !important;
+  border: none;
+}
+.btn-linkedin i {
+  color: #fff !important;          /* White icon for contrast */
 }
 .btn-linkedin:hover {
-  background: #005983 !important;
+  background: #333 !important;
   color: #fff !important;
   text-decoration: none;
 }
@@ -76,8 +82,12 @@
     align-items: center;
   }
   #about-me .col-md-8 {
-    margin-top: 24px;
+    margin-top: 28px;
     margin-left: 0 !important;
+  }
+  #about-me img {
+    width: 220px !important;
+    height: 220px !important;
   }
 }
 </style>
