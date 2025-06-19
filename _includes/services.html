@@ -3,42 +3,55 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">About Me</h2>
+        <h2 class="section-heading">ABOUT ME</h2>
       </div>
     </div>
-    <div class="row align-items-center" style="margin-top: 40px;">
+    <div class="row d-flex align-items-center" style="margin-top: 40px; display: flex; align-items: center;">
       <!-- Profile Image and Buttons -->
       <div class="col-md-4 text-center">
-        <img src="img/about-me/About.jpg" alt="Tanner Peck" class="img-fluid rounded-circle" style="width: 275px; height: 275px; object-fit: cover; border: 6px solid #17375e;">
+        <img 
+          src="/img/aboutme/About.jpg"
+          alt="Tanner Peck"
+          style="
+            width: 275px;
+            height: 275px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #17375e;
+            display: block;
+            margin: 0 auto 28px auto;"
+        >
         <div class="mt-4">
-          <a href="/files/Tanner%20Peck%20-%20Resume.pdf" class="btn btn-primary btn-lg mb-2" download>
+          <a href="/files/Tanner%20Peck%20-%20Resume.pdf" class="btn btn-primary btn-lg mb-2" download style="width:90%;max-width:270px;font-weight:bold;">
             <i class="fa fa-download"></i> Download Resume
           </a>
           <br>
-          <a href="https://www.linkedin.com/in/tanner-josiah-peck/" class="btn btn-linkedin btn-lg" target="_blank" style="background: #0077b5; color: #fff; margin-top: 8px;">
+          <a href="https://www.linkedin.com/in/tanner-josiah-peck/" class="btn btn-linkedin btn-lg" target="_blank" style="background: #0077b5; color: #fff; margin-top: 12px; width:90%;max-width:270px;">
             <i class="fa fa-linkedin"></i> LinkedIn
           </a>
         </div>
       </div>
       <!-- About Me Text -->
-      <div class="col-md-8">
-        <div style="margin-left: 24px;">
-          <h4 style="color: #17375e; font-weight: bold;">Background</h4>
-          <p style="font-size: 1.15rem;">
-            B.S in Mechanical Engineering, Syracuse University
-          </p>
-          <h4 style="color: #17375e; font-weight: bold;">Skills</h4>
-          <p style="font-size: 1.15rem;">
-            Solidworks, Autodesk Inventor, Onshape, MATLAB, RStudio, NI Multisim, Arduino, Microsoft (Word, Powerpoint, Excel), 3D Printing, Mechanical Assembly, Machine Lab Trained.
-          </p>
+      <div class="col-md-8 d-flex align-items-center" style="height: 100%;">
+        <div style="margin-left: 24px; width:100%;">
+          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+            <h4 style="color: #17375e; font-weight: bold; margin-bottom: 10px;">BACKGROUND</h4>
+            <p style="font-size: 1.15rem; margin-bottom: 30px;">
+              B.S in Mechanical Engineering, Syracuse University
+            </p>
+            <h4 style="color: #17375e; font-weight: bold; margin-bottom: 10px;">SKILLS</h4>
+            <p style="font-size: 1.15rem;">
+              Solidworks, Autodesk Inventor, Onshape, MATLAB, RStudio, NI Multisim, Arduino, Microsoft (Word, Powerpoint, Excel), 3D Printing, Mechanical Assembly, Machine Lab Trained.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Optional: Add these styles to your main CSS if you want to further style the buttons -->
 <style>
+/* LinkedIn button custom style */
 .btn-linkedin {
   display: inline-block;
   padding: 10px 24px;
@@ -46,10 +59,22 @@
   border-radius: 5px;
   text-decoration: none;
   transition: background 0.2s;
+  font-weight: bold;
+  text-align: center;
 }
 .btn-linkedin:hover {
   background: #005983;
   color: #fff;
   text-decoration: none;
+}
+@media (max-width: 991px) {
+  #about-me .row.d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  #about-me .col-md-8 {
+    margin-top: 24px;
+    margin-left: 0 !important;
+  }
 }
 </style>
